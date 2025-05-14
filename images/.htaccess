@@ -1,0 +1,2 @@
+# .htaccess - Prevent directory listing
+Options -Indexes

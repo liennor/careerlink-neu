@@ -1,0 +1,9 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Rewrite URLs ending without .php to .php files
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
+
+# Prevent directory listing
+Options -Indexes
